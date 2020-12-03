@@ -1,0 +1,15 @@
+<h1 class="display-4">Input your place of interest</h1>
+<p class="lead">Please fill in the food categories and place of interest:</p>
+<form class="form-group" action="/addPlace" method="POST">
+  <div class="form-group col-md-6">
+    <label for="foodCategories">Food Categories</label>
+    <input class="form-control mr-sm-2" type="text" placeholder="categories" 
+      name="poi[category]" id="foodCategories" required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="placeOfInterests">Place(s) of interests</label>
+    <input class="form-control mr-sm-2" type="text" placeholder="place of interests" 
+      name="poi[place]" id="placeOfInterests" required>
+  </div>
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Confirm</button>
+</form>

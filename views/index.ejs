@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pick a POI</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar">
+        <a class="navbar-brand">PickAPOI</a>
+        <div class="navbar-nav-scroll">
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item">
+              <a class="nav-link <%= page === 'home' && 'active' %>" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link <%= page === 'input' && 'active' %>" href="/input">Input POI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link <%= page === 'pick' && 'active' %>" href="/pick">Pick a POI</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="jumbotron">
+        <%- include(page); %>
+      </div>
+    </div>
+    <footer>
+      <p class="text-center text-muted">© Copyright 2020 pehcy</p>
+    </footer>
+  </body>
+  <script language="javascript" src="js/bootstrap.min.js"></script>
+  <script src="client.js"></script>
+</html>

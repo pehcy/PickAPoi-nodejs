@@ -1,0 +1,39 @@
+<h1 class="display-4">Pick a POI</h1>
+<p class="lead">Please fill in the food categories and place of interest:</p>
+<table class="table table-borderless" id="displayPoiTable">
+  <thead>
+    <th scope="col">Categories</th>
+    <th scope="col">Place of Interest(s)</th>
+  </thead>
+  <tbody>
+    <% data.forEach( function(d) { %>
+      <tr id=<%= d._id %>>
+        <th scope="row"> <%= d._id %> </th>
+        <td> <%= d.places.join(", ") %> </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+<form method="POST" action="/getPOI" id="poiFilteredForm">
+  <div class="col-md-3 mb-3">
+    <label for="filterOut01">Filter out category</label>
+    <select class="custom-select" id="filterOut" name="filterOut">
+      <option selected disabled value="">Choose...</option>
+      <% data.forEach( function(d) { %>
+        <option> <%= d._id %> </option>
+      <% }); %>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-outline-primary">Pick a POI</button>
+</form>
+<% if (typeof chosenPOI !== 'undefined' ) { %>
+  <hr class="my-4">
+  <div class="d-flex justify-content-center">
+    <div class="d-flex flex-column">
+      <div class="p-2 lead">Your lucky place for today is</div>
+      <div class="p-2">
+        <h1 class="display-4"> <%= chosenPOI %> </h1>
+      </div>
+    </div>
+  </div>
+<% } %>
