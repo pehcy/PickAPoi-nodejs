@@ -8,6 +8,11 @@ You can add your favourite type of foods, and famous food street around Kuala Lu
 ## How to start
 Clone this repo and insatll the dependencies
 ```
+git clone https://github.com/pehcy/PickAPoi-nodejs.git
+cd PickAPoi-nodejs
+```
+
+```
 npm install
 ```
 
