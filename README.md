@@ -6,7 +6,6 @@ The Pick a POI is a food picker application for Appxplore company.
 You can add your favourite type of foods, and famous food street around Kuala Lumpur.
 
 ## How to start
----
 Clone this repo and insatll the dependencies
 ```
 npm install
@@ -27,7 +26,7 @@ db.createUser(
 In `db.js`, The mongoose will connect to your local database and create a model named `poiModel`.
 
 ## Files Structure
----
+
 The `views` folder contained the webpage template and partial elements
 to be display, and the controller used to create new POI and store 
 into mongoDB database.
@@ -54,7 +53,7 @@ into mongoDB database.
 ```
 
 ## Screenshots
----
+
 ![add_poi](./screenshots/screenshot01.png)
 
 ![add_poi](./screenshots/screenshot02.png)
