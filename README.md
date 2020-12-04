@@ -56,6 +56,10 @@ into mongoDB database.
 ├── package-lock.json
 └── README.md
 ```
+## Updates
+
+__Bug fixed (03 Dec 2020):__ The food categories sometimes count spacing as one character,
+e.g. "Expensive" and "Expensive " doen't get trim and counted as two distinct categories.
 
 ## Screenshots
 
