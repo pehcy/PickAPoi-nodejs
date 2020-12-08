@@ -51,7 +51,6 @@ router.post('/getPOI', (req, res) => {
         console.log('Unable to perform aggregation: ' + err);
       }
       else {
-        res.redirect('/pick');
         console.log(result);
         const listOfPlaces = result.map(p => p.places).flat();
         res.render('index', { 
