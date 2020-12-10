@@ -30,6 +30,9 @@ db.createUser(
 
 In `db.js`, The mongoose will connect to your local database and create a model named `poiModel`.
 
+Once you setup everthing, type `npm start` and go into `localhost:3000`
+to check it.
+
 ## Files Structure
 
 The `views` folder contained the webpage template and partial elements
@@ -58,8 +61,11 @@ into mongoDB database.
 ```
 ## Updates
 
-__Bug fixed (03 Dec 2020):__ The food categories sometimes count spacing as one character,
+__Bug fixed (03 Dec 2020):__ 
+1. The food categories sometimes count spacing as one character,
 e.g. "Expensive" and "Expensive " doesn't get trim and counted as two distinct categories.
+
+2. (Fixed) Randomly draw lucky poi not working, due to `res.redirect`.
 
 ## Screenshots
 
