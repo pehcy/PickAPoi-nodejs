@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const MONGO_USERNAME = 'poi_user';
 const MONGO_PWD = 'root';
 const MONGO_HOSTNAME = '127.0.0.1';
-const MONGO_PORT = '27017';
+const MONGO_PORT = '27017'; // default port for mongoDB
 const MONGO_DB = 'poiModel';
 
 const options = { 
