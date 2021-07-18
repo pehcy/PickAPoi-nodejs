@@ -13,7 +13,7 @@ option.addEventListener('change', function() {
     previous = row;
     row.parentNode.removeChild(row);
   }
-  else if(previous.length === 0) {
+  else {
     var row = document.getElementById(this.value);
     previous = row;
     row.parentNode.removeChild(row);
