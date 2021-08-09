@@ -19,3 +19,15 @@ option.addEventListener('change', function() {
     row.parentNode.removeChild(row);
   }
 });
+
+// Update immidiately without rerender the page
+function sendPost(data, routeURL) {
+  return new Promise((resolve, reject) => {
+    return $.ajax({
+      data: JSON.stringify(data),
+      type: 'POST',
+      url: routeURL,
+      success: resolve
+    });
+  });
+}
